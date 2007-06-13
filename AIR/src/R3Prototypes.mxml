@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:WindowedApplication xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute">
+	
+	<mx:Button label="Add Text" left="10" bottom="10" id="addTextButton" click="addText()"/>
+	
+	<mx:TextArea left="10" top="10" bottom="40" right="10" id="textBox"/>
+	
+	<mx:Script>
+		<![CDATA[
+			
+			private function addText():void {
+				textBox.text += "Some Text\n";
+			}
+			
+		]]>
+	</mx:Script>
+	
+</mx:WindowedApplication>
