@@ -8,8 +8,16 @@
 
 	<mx:Script>
 		<![CDATA[
+			import mx.controls.Image;
+			import mx.containers.Canvas;
 			public function init():void {
+				
+				
 
+				var i:Image = new Image();
+				var t:Transformations = new Transformations();
+				i.addChild(t);
+				addChild(i);
 			}
 		]]>
 	</mx:Script>
